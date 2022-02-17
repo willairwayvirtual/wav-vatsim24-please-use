@@ -45,7 +45,7 @@ Public Class wav_login
         'checking the result
         If userFound = True Then
 
-        Dim obj As New Form3mll
+    Dim obj As New Form2
 
             obj.Show()
 
