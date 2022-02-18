@@ -10,8 +10,8 @@ Public Class wav_login
         Me.Close()
     End Sub
 
-   
-       myConnection.Close()
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles OK.Click
+        myConnection.Close()
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
         'Change the following to your access database location
         dataFile = "C:\VisStudioProj\wav web\willairwayvirtual34\willairwayvirtual34\app_data\willairwayvirtualDBv1.accdb"
@@ -44,18 +44,17 @@ Public Class wav_login
 
         'checking the result
         If userFound = True Then
+            'Me.Close()
+            Dim obj As New form2
 
-    Dim obj As New Form2
+            obj.Show()
 
             obj.Show()
 
-
-            obj.Show()
-            Me.Close()
         Else
             MsgBox("YOU DONT EXIST", MsgBoxStyle.OkOnly, "YOU DONT EXIST")
         End If
         myConnection.Close()
     End Sub
 
-    End Class 
+End Class 

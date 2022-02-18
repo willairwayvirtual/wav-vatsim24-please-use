@@ -105,6 +105,7 @@ Partial Class wav_login
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "wav_login"
         Me.Text = "wav_login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
